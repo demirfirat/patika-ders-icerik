@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Selector</title>
+
     <style>
+       
+        * {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
         .s1 {
         padding-left: 8px;
         border-left: 5px solid blue;
@@ -17,14 +22,17 @@
        .s2.s3 {
         padding-left: 8px;
         border-left: 5px solid blue;
+        color: rgb(245, 235 ,1 )
        }
        .s4 .s5{
         padding: 1px 3px;
         border: 3px solid orangered;
+        color: crimson;
        }
        #content {
         padding-left: 8px;
         border-left: 5px solid green;
+        color: rgb(80, 82, 124);
        }
        p .c6 {
         padding-left: 8px;
@@ -37,6 +45,24 @@
        [href] {
         border: 4px solid mediumorchid;
        }
+       .a1{
+        color: rgb(255, 255, 255);
+        background-color: rgb(144, 202, 93);
+       }
+       .a2{
+        background-color: rgb(81, 201, 201);
+       }
+       .a3{
+        width: 300px;
+        height: 300px;
+        background-image: url(/week1/img/icon.jpg);
+        background-size: 100px 100px;
+        border: 2px solid rgb(242, 177, 0);
+        background-repeat: no-repeat;
+        background-position: center;
+
+       }
+       
     </style>
 </head>
 <body>
@@ -67,7 +93,23 @@
     <p>Lorem, ipsum dolor. <span></span><mark>Lorem, ipsum dolor.</mark>Lorem ipsum dolor sit amet consectetur.</p>
 
     <h2>[attirubute]</h2>
-    
+
     <p><a href="https://www.google.com">google</a></p>
+
+    <h1>CSS Backgrounds</h1>
+    <h2>bacground-colors</h2>
+    
+    <p class="a1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto eaque mollitia soluta.</p>
+
+    <p class="a2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium consequatur sapiente hic esse eos magni maxime praesentium debitis reiciendis vel!</p>
+
+    <span class="a1">Lorem ipsum dolor, sit amet consectetur adipisicing.</span> <span class="a2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, quas.</span> <span class="a1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+
+    <h2>background-image</h2>
+    <div class="a3"></div>
+
+
+
+
 </body>
 </html>
