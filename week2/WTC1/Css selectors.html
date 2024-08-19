@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+    <style>
+        .s1 {
+        padding-left: 8px;
+        border-left: 5px solid blue;
+        text-align: center;
+        font-size: 17px;
+        font-style: italic;
+        background-color: burlywood;
+        color: aquamarine;
+       }
+       .s2.s3 {
+        padding-left: 8px;
+        border-left: 5px solid blue;
+       }
+       .s4 .s5{
+        padding: 1px 3px;
+        border: 3px solid orangered;
+       }
+       #content {
+        padding-left: 8px;
+        border-left: 5px solid green;
+       }
+       p .c6 {
+        padding-left: 8px;
+        border-left: 5px solid green
+       }
+       p mark {
+        padding: 1px 3px;
+        border: 3px solid orangered;
+       }
+       [href] {
+        border: 4px solid mediumorchid;
+       }
+    </style>
+</head>
+<body>
+    <h1>CSS Selectors</h1>
+    <h2>.class</h2>
+    <p class="s1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum assumenda voluptas aliquam architecto fugiat animi veritatis eos facilis, soluta facere libero voluptatem. Magni voluptate provident tempora, excepturi reiciendis quidem exercitationem?</p>
+    <p>Lorem, ipsum dolor.</p>
+    <h2>.class1.class2</h2>
+    <p class="s2 s3">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    <p class="s2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nisi ducimus iste!</p>
+    <h2>.class1 .class2</h2>
+    <p class="s4">Lorem, ipsum. <span class="s5">Lorem ipsum dolor sit amet.</span></p>
+    <h2>#id</h2>
+    <p id="content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi fugiat nobis consectetur quasi tenetur consequuntur.</p>
+    <h2>element.class</h2>
+    <p class="s6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, voluptatem dolore ratione aperiam, aspernatur voluptates, cupiditate tempora sint rerum officia nemo nesciunt? Quae, ex fugit.</p>
+    <h2>element>element</h2>
+    <p>Lorem, ipsum dolor. <span></span><mark>Lorem, ipsum dolor.</mark>Lorem ipsum dolor sit amet consectetur.</p>
+    <h2>[attirubute]</h2>
+    <p><a href="https://www.google.com">google</a></p>
+</body>
+</html>
