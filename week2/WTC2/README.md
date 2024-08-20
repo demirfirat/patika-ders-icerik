@@ -107,7 +107,7 @@ div {
     /* Metin rengini beyaz yapma */
 }
 ```
-### III. Metinlerin Ortalanması:
+### 3. Metinlerin Ortalanması:
 > Metinleri dikeyde ve yatayda ortalamak için vertical-align ve text-align özelliklerini kullanabiliriz.
 ```
 /* Metni yatayda merkezde hizalama */
@@ -145,7 +145,7 @@ div {
     /* Yükseklik değerini belirtmek önemlidir */
 }
 ```
-### IV. Çok Satırlı Metin Hizalaması:
+### 4. Çok Satırlı Metin Hizalaması:
 > Çok satırlı metinleri hizalamak için text-align ve line-height özelliklerini kullanabiliriz.
 ```
 /* Çok satırlı metni merkezde hizalama */
