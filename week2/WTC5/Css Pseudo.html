@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Psuedo</title>
+    <style>
+        a:active{
+            color: brown;
+        }
+        a:hover{
+            color: red;
+        }
+        input:disabled{
+            background-color: darkcyan;
+        }
+        input:not(.name){
+            background-color: blueviolet !important; 
+        }
+        li:nth-child(1){
+            background-color: aqua;
+        }
+        .c1::first-line{
+            color: green;
+        }
+        .c2::before,
+        .c2::after{
+            content: '';
+            width: 10px;
+            height: 10px;
+            display: inline-block;
+            background-color: blueviolet;
+            border-radius: 11px;
+        }
+        .c2::before{
+            margin-right: 5px;
+        }
+        .c2::after{
+            margin-left: 5px;
+        }
+        ::selection{
+            color: rgb(0, 0, 0);
+            background-color: coral;
+        }
+    </style>
+</head>
+<body>
+    <h1>Css Psuedo</h1>
+    <h2>:active</h2>
+        <p><a href="#">Bağlantıya Tıkla</a></p>
+    <h2>:hover</h2>
+        <p><a href="#">İşaretçi ile bağlantı üzerine gel.</a></p>
+    <h2>:disabled</h2>
+        <input type="text" disabled>
+    <h2>:not(selector)</h2>
+        <input type="text" class="name">
+    <h2>:nth-child(n)</h2>
+        <ul>
+            <li>İstanbul</li>
+            <li>İzmir</li>
+            <li>Ankara</li>
+            <li>Kars</li>
+            <li>Antalya</li>
+        </ul>
+    <h2>Css Pseudo-elements</h2>
+    <h3>::first-line</h3>
+        <p class="c1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus laboriosam odit quasi deserunt iure soluta pariatur, veniam dolores iste reiciendis itaque excepturi 
+        ipsam consectetur autem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sint quidem voluptate mollitia, voluptates aliquam aperiam, dolores nobis laboriosam nesciunt ut autem vitae dolorum dignissimos quisquam, deserunt aspernatur itaque nulla. Aspernatur, ab natus! Voluptatem, deserunt porro expedita distinctio quaerat doloribus!</p>
+    <h3>::before, ::after</h3>
+        <p class="c2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero laborum nulla rem vel harum, doloremque iste omnis quo fugiat quibusdam et. Totam quidem fugit quasi!</p>
+</body>
+</html>
