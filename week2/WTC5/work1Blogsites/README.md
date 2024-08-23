@@ -1,1 +1,1 @@
-#Patika+ dersleri ile yaptığım HTML-Css basit blog web sitesi 1.ödev
+# Patika+ dersleri ile yaptığım HTML-Css basit blog web sitesi 1.ödev
