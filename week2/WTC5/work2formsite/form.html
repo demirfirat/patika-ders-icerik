@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayıt Formu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--FORM ELEMENTİ-->
+    <form id="survey-form">
+
+         <!--SAYFA BAŞLIĞI-->
+        <h1 id="title">Kayıt Formu</h1>
+
+    <!--AÇIKLAMA-->
+        <p id="description">Lütfen bilgilerinizi girerek formu doldurunuz.</p>
+
+        <!--İSİM GİRİŞ ALANI-->
+        <label id="name-label" for="name">İsim:</label>
+        <input id="name" type="text" placeholder="isminizi giriniz" required>
+
+        <!--E POSTA GİRİŞ ALANI-->
+        <label id="email-label" for="email">E-posta:</label>
+        <input id="email" type="email" placeholder="E-posta adresinizi giriniz" required>
+
+        <!--SAYI GİRİŞ ALANI-->
+        <label id="number-label" for="number">Yaş:</label>
+        <input id="number" type="number" placeholder="Yaşınızı giriniz" min="18" max="99" required>
+
+        <!--SEÇİM KUTUSU-->
+        <label for="dropdown">Hangi bölümden mezun oldunuz?</label>
+        <select id="dropdown" required>
+            <option value="">Bir bölüm seçin</option>
+            <option value="otomotiv">Otomotiv</option>
+            <option value="bilgisayar">Bilgisayar Mühendisliği</option>
+            <option value="elektrik">Elektrik-Elektronik Mühendisliği</option>
+        </select>
+
+        <!--RADYO DÜĞMELERİ-->
+        <p>Cinsiyet:</p>
+        <label>
+            <input type="radio" name="gender" value="male" required>Erkek
+        </label>
+        <label>
+            <input type="radio" name="gender" value="female">Kadın
+        </label>
+
+        <!--ONAY KUTULARI-->
+        <p>Hangi dilleri biliyorsunuz?</p>
+        <label>
+            <input type="checkbox" name="language" value="javascript"> javascript
+        </label>
+        <label>
+            <input type="checkbox" name="language" value="python"> Python
+        </label>
+        <label>
+            <input type="checkbox" name="language" value="java"> Java
+        </label>
+
+        <!--METİN ALANI-->
+        <label for="comments">Ek yorumlar:</label>
+        <textarea id="comments" placeholder="Yorumlarınızı buraya yazın"></textarea>
+
+        <!--GÖNDER BUTONU-->
+        <input id="submit" type="submit" value="gönder">
+    </form>
+    
+</body>
+</html>
