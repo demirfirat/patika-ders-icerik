@@ -1,0 +1,119 @@
+:root{
+    --primary-color: #333;
+    --background-color: #484848;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+}
+p{
+    color: #666;
+}
+.button{
+    min-width: 140px;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 38px;
+    text-decoration: none;
+    padding: 0 24px;
+    text-align: center;
+    background-color: black;
+    display: inline-block;
+    border-radius: 10px;
+}
+#header{
+    color: #f4f4f4;
+    position: relative;
+    padding: 5px 0;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+#header h1{
+    justify-content: center;
+    display: flex;
+}
+#header a{
+    color: #f4f4f4;
+    text-decoration: none;
+}
+#header ul{
+    list-style: none ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+#header ul li{
+    margin: 0 10px;
+}
+#header ul li:hover{
+    text-decoration: underline;
+}
+article{
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
+}
+.section-title{
+    font-size: 35px;
+    font-weight: 600; 
+    letter-spacing: .5px;
+    line-height: 1;
+    margin-top: 25px;
+    margin-left: 15px;
+}
+.container{
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.container1{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+}
+.blog1, .blog2{
+    width: 45%; 
+    padding: 10px;
+}
+.blog{
+    margin: 8px 0;
+    background-color: #f4f4f4;
+}
+.blog-content{
+    padding: 24px;
+}
+.blog img{
+    display: block;
+    width: 100%;
+
+}
+.blog h3{
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.45;
+    text-align: center;
+    font-size: 25px;
+}
+.blog p{
+    line-height: 1.45;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 17px;
+    font-weight: 700;
+}
+#footer{
+    padding: 40px 0;
+    text-align: center;
+    color: #f4f4f4;
+    background-color: var(--primary-color);
+}
