@@ -1,0 +1,98 @@
+body{
+    font-family: sans-serif;
+    background-color: #a0bbd2;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+nav{
+    background-color: #0056b3;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+nav ul{
+    list-style-type: none;
+    background-color: #fafafa;
+    color: #fff;
+    padding: 10px;
+}
+nav ul li{
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a{
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+}
+#home{
+    text-align: center;
+    padding: 50px 0;
+    background-color: #e8f0fe;
+}
+#home img{
+    max-width: 700px;
+    border-radius: 5%;
+}
+#home figcaption{
+    margin-top: 20px;
+    font-style: italic;
+    color: #0056b3;
+}
+#info{
+    padding: 50px 20px;
+    background-color: #fff;
+}
+#info h2{
+    color: #0056b3;
+    text-align: center;
+    margin-bottom: 30px;
+}
+#info p{
+    margin-bottom: 20px;
+    text-align: justify;
+}
+#books{
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+#books h2{
+    color: #0056b3;
+    text-align: center;
+    margin-bottom: 30px;
+}
+#books ul{
+    list-style-type: square;
+    margin: 0;
+    padding: 0;
+    max-width: 600px;
+    margin: auto;
+}
+#books ul li{
+    margin-bottom: 10px;
+}
+footer{
+    background-color: #0056b3;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+footer p{
+    margin: 0;
+    font-size: 14px;
+}
+section ul li a{
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+section ul li a:hover{
+    text-decoration: underline;
+    color: #0056b3;
+}
