@@ -1,4 +1,6 @@
 # Tailwind CSS ile Oluşturulmuş Web Sayfası
+![Ekran görüntüsü 2024-09-06 223833](https://github.com/user-attachments/assets/e74510e1-a7ee-4a17-bd6a-8fdadc2e5aa8)
+
 
 Bu proje, **Tailwind CSS** framework'ü kullanılarak oluşturulmuş bir basit web sayfasıdır. Proje, modern ve esnek bir şekilde özelleştirilebilir bir arayüz sunar.
 
