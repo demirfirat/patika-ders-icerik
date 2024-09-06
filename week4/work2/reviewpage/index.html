@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"><!--font awesome cdn-->
+    <script src="https://cdn.tailwindcss.com"></script><!--Tailwind css cdn-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/lib.min.js" integrity="sha512-4wPzUxrf8WOwlmykZNS7l21TMulJkF9okNw86hW/YfE9uYeCAxPP3J22c3GZ14jo16zPO8H5Di4HrgOWtc0jmw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="icon" href="https://tailwindui.com/img/logos/mark.svg?color=black&shade=500">
+    <title>Tailwind Css Review Page</title><!--Site başlığı-->
+</head>
+<body class="bg-gray-100">
+    <!--NAVBAR-->
+    <nav class="sticky-top-0 p-4 bg-white z-50">
+        <div class="container flex justify-between mx-auto">
+            <ul class="items-stretch hidden space-x-3 lg:flex">
+                <li class="flex">
+                    <a href="#" class="flex-items-center px-4 border-b-2 border-indigo-700 text-indigo-700">Home</a>
+                </li>
+                <li class="flex">
+                    <a href="#" class="flex-items-center px-4 border-b-2 hover:border-indigo-700 hover:text-indigo-700">Products</a>
+                </li>
+                <li class="flex">
+                    <a href="#" class="flex-items-center px-4 border-b-2 hover:border-indigo-700 hover:text-indigo-700">Services</a>
+                </li>
+            </ul>
+            <a href="#" aria-label="homepage" class="flex items-center p-2">
+                <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=black&shade" alt="homepageimg">
+            </a>
+            <div class="flex items-center md:space-x-4">
+                <div class="relative">
+                    <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+                        <button type="submit" title="Search" class="p-1 focus:outline-none focus:ring">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </span>
+                    <input type="search" name="Search" placeholder="Search..."
+                        class="w-32 py-2 pl-10 text-sm rounded-md sm:w-auto focus:outline-none focus:bg-gray-50">
+                </div>
+                <button type="button"
+                class="hidden px-6 py-2 font-semibold rounded lg:block bg-indigo-700 text-white rounded-md">Log
+                in</button>
+            </div>
+            <button title="Open menu" type="button" class="p-4 lg:hidden">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+    <!--NAVBAR END-->
+    <!--Hero content-->
+    <section>
+        <div class="container mx-auto px-4 py-16 flex flex-col items-center text-center md:py-32 md:px-10 lg:px-32 xl:max-w-3xl">
+        <h1 class="text-5xl font-bold sm:text-5xl">Quisquam necessita      
+            vel <span class="text-indigo-700">laborum</span>
+            <span class="text-indigo-700">doloribus</span>delectus
+        </h1>
+        <p class="mt-10 mb-10 px-10 text-lg font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Eum recusandae qui, quidem illo commodi.</p>
+            <div class="flex flex-wrap justify-center gap-3">
+                <button class="transition ease-in-out delay-150 bg-indigo-700 hover:-translate-x-1 hover:scale-110 hover:bg-indigo-500 duration-300 px-5 py-3 rounded text-white font-semibold">Get Started</button>
+                <button class="px-5 py-3 rounded hover:bg-indigo-700 font-semibold hover:text-white">Learn More</button>
+            </div>
+        </div>
+    </section>
+    <!--Hero content end-->
+    <!--4lü kart yapısı-->
+    <section class="bg-gray-50">
+        <div class="container mx-auto flex flex-col items-center md:px-10 md:my-8">
+            <h2 class="text-4xl font-bold text-center mt-12 mb-10">What our customers are saying about us</h2>
+        </div>
+        <div class="container mx-auto flex flex-col items-center justify-center lg:flex-row lg:flex-wrap lg:justify-evenly lg:px-10">
+            <div class="flex flex-col mx-4 my-6 max-w-sm shadow-lg"><!--kart1-->
+                <div class="flex flex-col px-4 py-12 rounded-t-md sm:px-8 md:px-12 bg-white">
+                    <i class="fa-solid fa-angles-right text-4xl text-indigo-700"></i>
+                    <p class="italic text-center text-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint inventore soluta suscipit iusto accusantium autem.</p>
+                    <i class="fa-solid fa-angles-left text-4xl text-indigo-700 text-right"></i>
+                </div>
+                <div class="flex flex-col py-8 rounded-b-md sm:px-8 md:px-12 bg-indigo-700 items-center">
+                    <img class="rounded-full w-16 h-16 mb-2 -mt-16" src="https://picsum.photos/id/215/800/800?grayscale" alt="Thumbnail.">
+                    <p class="text-white font-bold text-lg">Fırat Demir</p>
+                    <p class="text-white font-light text-sm">Frontend Developer</p>
+                </div>
+            </div>
+            <div class="flex flex-col mx-4 my-6 max-w-sm shadow-lg"><!--kart2-->
+                <div class="flex flex-col px-4 py-12 rounded-t-md sm:px-8 md:px-12 bg-white">
+                    <i class="fa-solid fa-angles-right text-4xl text-indigo-700"></i>
+                    <p class="italic text-center text-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint inventore soluta suscipit iusto accusantium autem.</p>
+                    <i class="fa-solid fa-angles-left text-4xl text-indigo-700 text-right"></i>
+                </div>
+                <div class="flex flex-col py-8 rounded-b-md sm:px-8 md:px-12 bg-indigo-700 items-center">
+                    <img class="rounded-full w-16 h-16 mb-2 -mt-16" src="https://picsum.photos/id/214/800/800?grayscale" alt="Thumbnail.">
+                    <p class="text-white font-bold text-lg">Ali Okhan</p>
+                    <p class="text-white font-light text-sm">Frontend Developer</p>
+                </div>
+            </div>
+            <div class="flex flex-col mx-4 my-6 max-w-sm shadow-lg"><!--kart3-->
+                <div class="flex flex-col px-4 py-12 rounded-t-md sm:px-8 md:px-12 bg-white">
+                    <i class="fa-solid fa-angles-right text-4xl text-indigo-700"></i>
+                    <p class="italic text-center text-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint inventore soluta suscipit iusto accusantium autem.</p>
+                    <i class="fa-solid fa-angles-left text-4xl text-indigo-700 text-right"></i>
+                </div>
+                <div class="flex flex-col py-8 rounded-b-md sm:px-8 md:px-12 bg-indigo-700 items-center">
+                    <img class="rounded-full w-16 h-16 mb-2 -mt-16" src="https://picsum.photos/id/213/800/800?grayscale" alt="Thumbnail.">
+                    <p class="text-white font-bold text-lg">Özgür Dayanır</p>
+                    <p class="text-white font-light text-sm">UX-UI Designer-Fronted Developer</p>
+                </div>
+            </div>
+            <div class="flex flex-col mx-4 my-6 max-w-sm shadow-lg"><!--kart4-->
+                <div class="flex flex-col px-4 py-12 rounded-t-md sm:px-8 md:px-12 bg-white">
+                    <i class="fa-solid fa-angles-right text-4xl text-indigo-700"></i>
+                    <p class="italic text-center text-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint inventore soluta suscipit iusto accusantium autem.</p>
+                    <i class="fa-solid fa-angles-left text-4xl text-indigo-700 text-right"></i>
+                </div>
+                <div class="flex flex-col py-8 rounded-b-md sm:px-8 md:px-12 bg-indigo-700 items-center">
+                    <img class="rounded-full w-16 h-16 mb-2 -mt-16" src="https://picsum.photos/id/212/800/800?grayscale" alt="Thumbnail.">
+                    <p class="text-white font-bold text-lg">Alican Çatak</p>
+                    <p class="text-white font-light text-sm">Frontend Developer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--4lü kart yapısı bitiş-->
+    <!--Form yapısı-->
+    <section class="p-6 mt-8 mb-8">
+        <form class="conteiner w-full max-w-xl p-8 mx-auto space-y-6 rounded-md bg-white">
+            <h2 class="w-full text-3xl font-bold">Contact us</h2>
+            <div>
+                <label class="block mb-2 ml-1" for="">Name</label>
+                <input class="block w-full bg-gray-100 rounded-md pl-3 py-2 focus:outline-none focus:ring" type="text"
+                    placeholder="Your name">
+            </div>
+            <div>
+                <label class="block mb-2 ml-1" for="">Email</label>
+                <input class="block w-full bg-gray-100 rounded-md pl-3 py-2 focus:outline-none focus:ring" type="email"
+                    placeholder="Your email">
+            </div>
+            <div>
+                <label class="block mb-2 ml-1" for="">Message</label>
+                <textarea class="block w-full bg-gray-100 rounded-md pl-3 py-2 focus:outline-none focus:ring"
+                    type="text" placeholder="Message..."></textarea>
+            </div>
+            <div>
+                <button
+                    class="transition ease-in-out delay-100 hover:-translate-x-1 hover:scale-105 bg-indigo-700 hover:bg-indigo-800 text-white text-lg font-semibold w-full rounded p-2">Send</button>
+            </div>
+        </form>
+    </section>
+    <!--Form yapısı bitiş-->
+    <!--Footer-->
+    <footer>
+        <div class="container flex flex-col mx-auto p-8 lg:flex-row">
+            <ul
+                class="self-center py-6 space-y-4 text-center sm:flex sm:space-y-0 sm:justify-around sm:space-x-4 lg:flex-1 lg:justify-start">
+                <li>Shop</li>
+                <li>About</li>
+                <li>Blog</li>
+                <li>Pricing</li>
+                <li>Contact</li>
+            </ul>
+            <div class="flex flex-col justify-center space-x-4">
+                <div class="flex justify-center space-x-3">
+                    <a href="https://github.com/demirfirat" target="_blank"><i
+                            class="fa-brands fa-github text-white bg-purple-700 rounded-full p-2"></i></a>
+                    <a href="https://www.linkedin.com/in/demirfirat/" target="_blank"><i
+                            class="fa-brands fa-linkedin text-white bg-purple-700 rounded-full p-2"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram text-white bg-purple-700 rounded-full p-2"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest text-white bg-purple-700 rounded-full p-2"></i></a>
+                    <a href="#"><i class="fa-brands fa-google text-white bg-purple-700 rounded-full p-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Footer bitiş-->
+</body>
+</html>
