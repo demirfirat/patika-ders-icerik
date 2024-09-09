@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operators and Arithmetic</title>
+</head>
+<body>
+    <h1>Operators and Arithmetic</h1>
+    <script>
+        let x = 10;
+        let y = 2;
+        let z;
+        let a = 11;
+        let b = 2;
+        let c = 3;
+
+
+        console.group('Arithmetic');
+        z = x + y;
+        //toplama işlemi
+        console.log('addition', z);
+        
+        z = x - y;
+        //çıkarma işlemi
+        console.log('subtraction', z);
+        
+        z = x * y;
+        //çarpma işlemi
+        console.log('multiplication', z);
+       
+        z = x / y;
+         //bölme işlemi
+        console.log('division', z);
+        
+        z = a % b;
+        //bu da bölme işlemi ancak burada sayının kalanını bulmaya çalışır.
+        console.log('module', z);
+
+        z = a ** b;
+        // a sayısını b sayısı kadar çarpmak yani; a=11; işlemin sonucu 11*11 olur.
+        console.log('exponentiation', z);
+
+        z = (100 + 50) * 2;
+        console.log('precedence', z);
+
+        x++;
+        //x = x + 1 demektir
+        console.log('increment', x);
+
+        y--;
+        //x = x - 1 demektir
+        console.log('decrement', y);
+
+        console.groupEnd();
+
+        console.group('Assignment');
+
+        x += y;//x = x + y dir.
+        console.log('addition', x);
+
+        a -= b;//a = a - b dir.
+        console.log('subtraction', a)
+
+        a *= b;//a = a * b dir.
+        console.log('multiplication', a)
+
+        a /= b;//a = a / b dir.
+        console.log('division', a)
+
+        console.log('')
+    </script>
+</body>
+</html>
