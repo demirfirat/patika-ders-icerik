@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+<body>
+    <h1>JavaScript Variables</h1>
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>Scope</th>
+                <th>Redeclare</th>
+                <th>Reassign</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>var</strong></td>
+                <td>no</td>
+                <td>yes</td>
+                <td>yes</td>
+            </tr>
+            <tr>
+                <td><strong>let</strong></td>
+                <td>yes</td>
+                <td>no</td>
+                <td>yes</td>
+            </tr>
+            <tr>
+                <td><strong>const</strong></td>
+                <td>yes</td>
+                <td>no</td>
+                <td>no</td>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+        /*Declaring variables*/
+        var x = 1;
+        let y = 2;
+        const z = 3;
+        console.log(x, y, z);
+        /*Redeclare variables*/
+        var x = -1;
+        console.log('redeclared x', x);
+        /*Reassign variables*/
+        x = 10;
+        y = 20;
+        /*z = 30; */
+        console.log('reassigned x, y', x, y);
+
+        const user = {
+            name: 'Fırat',
+            age:24,
+        };
+        user.name = 'Ferhat';
+        console.log('reassigned user.name', user);
+
+        /*variable scope*/
+
+        { /*blok scope alt bloğu temsil eder burada yazılan değişken değerleri sadece bu blokta gösterir üst bloktaki değişkenler ayrıdır*/
+            let blockY = 2;
+            const blockZ = 3;
+            console.log('block scope', blockY, blockZ);
+        }
+
+        {//global scope blok içine yazılmış değişkeni bütün bloklarda geçerli kılar.
+            var globalX = 1;
+        }
+        console.log('global x', globalX);
+
+        function ornek() {//function scope
+            var x = 4;
+            let y = 5;
+            const z = 6;
+            console.log('function scope', x, y, z)
+        }
+        ornek();
+    </script>
+    <!--Examples...-->
+    <h1 id="tag"></h1>
+    <h2 id="head"></h2>
+    <p id="altyazi"></p>
+    <p class="prompt"></p>
+    <a target="_blank" href="https://www.vw.com.tr/" id="carid"></a>
+    <script>
+        fırat = 24;
+        furkan = 15;
+        a = fırat + furkan;
+        document.getElementsByClassName("prompt").innerHTML = "iki yaşın toplamı:" + a;
+
+        firat = 2;
+        getir = firat;
+        document.getElementById("tag").innerText = "başlık"
+
+        var all = 1;
+        document.getElementById("head").innerText = "variables" + all;
+
+        const pi = 3.14;
+        let person = "Fırat Demir";
+        let answer = 'Yes I am!';
+        document.getElementById("altyazi").innerHTML =
+        pi + "<br>" + person + "<br>" + answer;
+
+        let carName = "Volkswagen";
+        //document.getElementById("carid").innerHTML = carName;
+        
+        let price = 300;
+        document.getElementById("carid").innerHTML = carName + " " + person + " " + price; 
+        
+        let p = 12;
+        let q = 15;
+        let v = p + q;
+        alert(v);
+        alert(10 + 5);
+    </script>
+</body>
+</html>
