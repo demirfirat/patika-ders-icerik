@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Data Types</title>
+</head>
+<body>
+    <span style="border: 2px solid blue; font-size: xx-large;" ><strong>JavaScript Data Types</strong></span>
+    <script>
+        let str = 'Fırat';//genel olarak tek veya çift tırnakla oluşturulabilir. string ifadesini böyle tanımlayabiliriz. tek veya çift fark etmiyor.
+        console.log(str)
+
+        let int = 24;
+        console.log(typeof int, int);//typeof nedir; değişkenin türünü tespit etmek için kullanılır. numarada number, yazıda string ifadesini çıktı ile birlikte verir.
+
+        let surname = 'Demir';
+        console.log(typeof surname, str, surname);
+
+        let bool = true;
+       console.log(typeof bool, str, surname, bool);
+        //boolean döngüsü; true veya false değerini saklar.
+
+        let bigint = BigInt('56545645678456564561454');
+        console.log(typeof bigint, bigint);
+
+        let symbol = Symbol('Fırat');
+        console.log(typeof symbol, symbol);
+        //primitiv bir değer, değiştirilemez bir veri oluşturulur.
+
+        let x;
+        console.log(typeof x, x);
+        //tanımlanmamış bir değer olarak çıktı verir.
+
+        let y = null;
+        console.log(typeof y, y);
+        //seçilme değeri veya seçilmeden önceki boş değer diyilebilir.
+
+        let obj = {
+            name: 'Fırat',
+            age: 24,
+            admin: true,
+        };
+        console.log(typeof obj, obj);
+
+        //immutable(değiştirilmez değer)
+        let name = 'John';
+        let cloneName = name;
+        cloneName = 'Frankie';
+        console.log('immutable', name, cloneName);
+
+        //mutable(değiştirilebilir değer)
+        let user = {
+            name: 'Fırat',
+        };
+        let cloneUser = user;
+        cloneUser.name = 'Selami';
+        console.log('mutable', user, cloneUser);
+
+     
+    </script>
+</body>
+</html>
