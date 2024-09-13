@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Arrays</title>
+</head>
+<body>
+    <span style="border: 5px solid blue; padding: 5px; font-size: xx-large;"><strong>JavaScript Arrays</strong></span>
+    <script>
+        let numbers = [-1, 3, 2, 4, 5, 7, 9];
+        let strings = ['A', 'B', 'D', 'D'];
+
+        console.dir(numbers);
+        console.dir(strings);
+
+        // 0. elemanı güncellemek
+        numbers[0] = 1;
+
+        // Dizinin başına eleman ekleme
+        strings.unshift('unshift');
+        numbers.unshift(111);
+
+        //Dizinin sonuna eleman ekleme
+        strings.push('push');
+        numbers.push(10);
+
+        //Dizinin istenilen bir yerine eleman ekleme
+        strings.splice(2, 0, 'Deneme');
+        numbers.splice(0, 1, 500);
+
+        //Dizinin son elemanını silme
+        strings.pop();
+        numbers.pop();
+
+        //Dizinin ilk elemanını silme
+        strings.shift();
+        //numbers.shift();
+
+        //Dizi elemanlarını sırala
+        numbers.sort();
+
+        //Dizi elemanlarını ters sırala
+        numbers.reverse();
+
+        //Dizinleri birleştirme
+        const concated = numbers.concat([20, 30]);
+        console.log('numbers.concat()', concated);
+
+        //dizinin içindeki her eleman için işlem yap
+        const reduced = numbers.reduce(function(total, value){
+            return total + value;
+        }, 0);
+        console.log('numbers.reduce()', reduced);
+
+       //dizi içerisindeki tüm elemanlar için koşulu sınama
+       const isOK = numbers.every(function(value) {
+        if (value > 1){
+            return true
+        }
+       });
+       console.log('numbers.every()', isOK);
+
+        //dizi içerisindeki bazı elemanlar için koşulu sınama
+       const someOK = numbers.every(function(value) {
+        if (value > 0){
+            return true
+        }
+       });
+       console.log('numbers.every()', someOK);
+
+       //dizinin belli bir kısmını böl
+       const sliced = strings.slice(1, 3);
+       console.log('strings.slice()', sliced);
+
+       //diziyi metine dönüştür
+       const joined = strings.join(' - ');
+       console.log('strings.join()', joined);
+
+       //dizi içinde bir elemanı arama
+       const finder = strings.find(function(value){
+        if (value === 'D'){
+            return value;
+        }
+       });
+       console.log('strings.find()', finder);
+
+       //dizi içinde tüm elemanları ara
+       const filtered = strings.filter(function(value){
+        if (value === 'D'){
+            return value;
+        }
+       });
+       console.log('strings.filter()', filtered);
+
+       //dizi içerisindeki tüm elemanlara işlem yap
+       const mapped = strings.map(function(value) {
+        return '(' + value + ')';
+       });
+       console.log('strings.map()', mapped);
+
+       console.log('numbers[]', numbers[0]);
+       console.log('strings[]', strings[3]);
+       console.log('strings.includes()', strings.includes('D'));
+       console.log('strings.indexOf()', strings.indexOf('D'));
+       console.log('strings.lastindexOf()', strings.lastIndexOf('D'));
+       console.log('strings.at()', strings.at(0));
+
+       //bazı örnekler
+       let fruits = ['apple', 'kiwi', 'coconut', 'watermelon'];
+       console.log(fruits.lastIndexOf('kiwi'));
+
+       let numOffruits = fruits.length;
+       alert(numOffruits);
+        
+    </script>
+</body>
+</html>
