@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional statements</title>
+</head>
+<body>
+    <span style="border: 5px solid blue; padding: 5px; font-size: xx-large;"><strong>Conditional statements</strong></span>
+
+    <script>
+       
+        //Comparison operators
+        const age = 19;
+
+        console.group('Comparison Operators');
+
+        console.log( age > 17 ? 'Değer büyüktür.' : 'Değer büyük değildir.');
+        console.log( age < 17 ? 'Değer küçüktür.' : 'Değer küçük değildir.');
+        console.log(age == 16 ? 'Değer eşittir.' : 'Değer eşit değildir.');
+        console.log(age === '18' ? 'Değer ve tür eşittir.' : 'Değer ve tür eşit değildir.'); 
+        console.groupEnd();
+
+        //Logical operators
+        
+        const visa = true;
+        const permission = false;
+
+        console.group('Logical operators');
+        if (visa) {
+            if (age >= 18 || permission){
+                console.log('Ülkeye Hoşgeldiniz.');
+            }else {
+                console.log('Aile izni olmadan ülkeye girişiniz yasaktır.');
+            }
+        } else {
+            console.log('Ülkeye giremezsiniz.');
+        }
+
+        if (visa && age >= 18 || visa && permission){
+            console.log('Ülkeye hoşgeldiniz.');
+        } else if (visa && age < 18 || visa && !permission){
+            console.log('Aile izni olmadan ülkeye girişiniz yasaktır.')
+        } else {
+            console.log('Ülkeye giremezsiniz.')
+        }
+        console.groupEnd();
+        
+        //if statements
+        const score = 73;
+
+        console.group('If statements');
+
+        if (score >= 70){
+            console.log('Derece C');
+        } else if (score >= 60) {
+            console.log('Derece D');
+        } else if (score >= 50) {
+            console.log('Derece E');
+        } else {
+            console.log('Derece F');
+        }
+        console.groupEnd();
+
+        //Switch statements
+        const day = 3;
+        console.group('Switch statements')
+        switch(day){
+            case 1: 
+            console.log('Pazartesi');
+            break;
+            case 2: 
+            console.log('Salı');
+            break;
+            case 3: 
+            console.log('Çarşamba');
+            break;
+            case 4: 
+            console.log('Perşembe');
+            break;
+            case 5: 
+            console.log('Cuma');
+            break;
+            case 6: 
+            console.log('Cumartesi');
+            break;
+            case 7: 
+            console.log('Pazar');
+            break;
+            default:
+            console.log('Geçersiz Gün');
+        }
+        
+        switch(day){
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+                console.log('Hafta içi');
+                break;
+            case 6:
+            case 7:
+                console.log('Hafta sonu');
+                break;
+            default:
+                console.log('Geçersiz gün');
+                break;
+        }
+        //ÖRNEK
+
+        const color = 'green';
+
+        if (color === 'red'){
+            console.log('Dur');
+        } else if (color === 'yellow'){
+            console.log('Dikkat et');
+        } else if (color === 'green'){
+            console.log('Geç');
+        } else {
+            console.log('Bilinmeyen Renk');
+        }
+
+        switch (color){
+            case 'red': 
+            console.log('Dur');
+            break;
+            case 'yellow': 
+            console.log('Dikkat Et');
+            break;
+            case 'green': 
+            console.log('Geç');
+            break;
+            default:
+                console.log('Bilinmeyen Renk');
+            break;
+        }
+    </script>
+</body>
+</html>
