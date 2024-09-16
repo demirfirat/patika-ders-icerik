@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+    <style>
+        body{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <span style="border: 5px solid blue; padding: 5px; font-size: xx-large;"><strong>Document Object Model</strong></span>
+    <!--HTML elementleri arasında dinamik site arayüzü tasarlama konusunda bilinen güçlü bir modeldir. DOM sayesinde HTML elementlerini manipüle ederek daha efektif arayüzler elde edilir.-->
+
+    <ul>
+        <li id="html" class="course">HTML</li>
+        <li id="css" class="course">CSS</li>
+        <li id="javascript" class="course">JavaScript</li>
+        <li id="tailwindcss" class="course">TailwindCss</li>
+        <li id="bootstrapcss" class="course">BootstrapCss</li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed itaque consequatur odio iusto quo nobis voluptate quidem quos et ad. Blanditiis libero ipsa et autem. Ipsam cumque minus tempore repellat?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique possimus cumque fuga nesciunt culpa quas accusamus animi modi sed magnam iure, dicta harum repellendus sint temporibus commodi quae quod aperiam.</p>
+
+    <script>
+        console.dir(document);
+        console.log(document.documentElement);
+        console.dir(document.head);
+        console.dir(document.body);
+
+        //Örnekler
+        var body = document.body;
+        //değişken tanımlayarak kodu daha kullanılabilir hale getirdik.
+        body.style.backgroundColor = '#f4f4f1';
+        //style etiketi ile verilmiş olan siyah arkaplanı manipüle ederek beyaz arkaplan elde ettik. (buton renk değişimi veya olay örgüsü, event, ses oluşturma vs yapılabilir.)
+        body.dataset.uuid = '#123';
+        body.setAttribute('id', 'custom-id');
+        //bulunan etikete id uyguluyoruz.
+        body.classList.add('class1');
+        //bulunan etikete class ekleme
+
+        //süre verdiğimiz ve süre sonunda style değiştiğimiz bir örnek;
+        setTimeout(() => {
+            body.style.webkitTextFillColor = '#ff5733';
+        }, 2000 );
+
+        var elementById = document.getElementById('html');
+        setTimeout(() => {
+            elementById.style.backgroundColor = 'blue';
+        }, 2000 );
+        console.group('getElementById()');
+        console.log(elementById);
+        console.dir(elementById);
+        console.groupEnd();
+
+        var elementbyclassname = document.getElementsByClassName('course');
+        console.group('getelementbyclassname()');
+        console.log(elementbyclassname);
+        console.groupEnd();
+
+        var elementbytagname = document.getElementsByTagName('p');
+        console.group('getelementbytagname()');
+        console.log(elementbytagname);
+        console.groupEnd();
+
+        var selector = document.querySelector('#html')
+        console.group('querySelector()');
+        console.log(selector);
+        console.groupEnd();
+
+        var querySelectorAll = document.querySelectorAll('.course')
+        console.group('querySelectorAll()');
+        console.log(querySelectorAll);
+        console.groupEnd();
+    </script>
+</body>
+</html>
