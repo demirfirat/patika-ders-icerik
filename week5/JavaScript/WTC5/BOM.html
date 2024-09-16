@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Object Model</title>
+</head>
+<body>
+    <span style="border: 5px solid blue; padding: 5px; font-size: xx-large;"><strong>Browser Object Model</strong></span>
+
+    <script>
+        //ekran bilgisi
+        console.log(window)
+        console.group('window Screen');
+        console.log(screen);
+        console.log(screen.width);
+        console.log(screen.height);
+        console.groupEnd();
+        //konum bilgisi
+        console.group('window Location');
+        console.log(location);
+        console.log(location.origin);
+        console.log(location.pathname);
+        console.log(location.href);
+        console.groupEnd();
+        //tarayıcı bilgileri
+        console.group('window Navigator');
+        console.log(navigator);
+        console.log(navigator.userAgent);
+        console.log(navigator.vendor);
+        console.groupEnd();
+
+        //timing events
+        setTimeout( function () {
+        console.log('setTimeout');   
+        }, 2000);
+
+        var count = 0;
+        var interval = setInterval(function(){
+            if (count === 5){
+                clearInterval(interval);
+            } else {
+                count = count + 1;
+                console.log('setInterval', count);
+            }
+        }, 1000);
+        </script>
+</body>
+</html>
