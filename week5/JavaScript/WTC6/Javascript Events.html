@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Events</title>
+</head>
+<body>
+    <h1 style="border: 5px solid rgb(190, 33, 169); padding: 5px; font-size: xx-large; box-shadow: violet;">JavaScript Events</h1>
+    <button style="background-color: cadetblue; padding: 10px;border: none; color: bisque;" id="button">Click me!</button>
+    <input type="text" id="input" style="background-color: rgb(227, 227, 227); padding: 5px;" placeholder="input">
+    <button onclick="handleClear()" style="background-color: cadetblue; padding: 10px;border: none; color: bisque;">Clear Event</button>
+    <script>
+        var body = document.body;
+        var button = document.getElementById('button');
+        var input = document.getElementById('input');
+
+        function handleKeyup(event){
+            console.log('keyup', event);
+        }
+
+        function handleKeyDown(event){
+            console.log('keydown', event);
+        }
+        //add keyboard event
+        body.addEventListener('keyup', handleKeyup);
+        body.addEventListener('keydown', handleKeyDown);
+
+        //mouse click event
+        function handleClick(event){
+            button.style.backgroundColor = 'pink';
+            button.style.webkitTextFillColor = 'black';
+            console.log('click', event);
+        }
+        //mouse over event
+        function handleMouseOver(event){
+            console.log('mouseover', event);
+        }
+        //mouse out event
+        function handleMouseOut(event){
+            console.log('mouseout', event);
+        }
+
+        //add mouse event
+        button.addEventListener('click', handleClick);
+        button.addEventListener('mouseover', handleMouseOver);
+        button.addEventListener('mouseout', handleMouseOut);
+
+        //input event
+        function handleInput(event){
+            console.log('input', event);
+        }
+
+        // add input event
+        input.addEventListener('input', handleInput);
+
+        // remove events
+        function handleClear(){
+             //add keyboard event
+        body.removeEventListener('keyup', handleKeyup);
+        body.removeEventListener('keydown', handleKeyDown);
+         //add mouse event
+        button.removeEventListener('click', handleClick);
+        button.removeEventListener('mouseover', handleMouseOver);
+        button.removeEventListener('mouseout', handleMouseOut);
+         // add input event
+        input.removeEventListener('input', handleInput);
+        }
+    </script>
+</body>
+</html>
