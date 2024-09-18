@@ -1,4 +1,6 @@
 # Saat ve Karşılama Ekranı
+![image](https://github.com/user-attachments/assets/d42053ac-668e-4686-b613-2b872ae6b011)
+
 
 * Bu proje, HTML, CSS, Bootstrap ve JavaScript kullanarak oluşturulmuş basit bir saat ve karşılama ekranı içerir. Kullanıcıya güncel saati gösterir ve "Hoş geldiniz" mesajı verir.
 
