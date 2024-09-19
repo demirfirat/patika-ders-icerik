@@ -1,0 +1,1 @@
+Merhaba, bu dersimizde sitemizi cv olarak düzenledik. İyi dersler..

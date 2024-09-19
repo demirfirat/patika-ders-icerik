@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Demir Otel</title>
+</head>
+<body>
+    <h1>İletişim</h1>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Anasayfa</a></li>
+            <li><a href="hakkında.html">Hakkında</a></li>
+            <li><a href="servisler.html">Servisler</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
+        </ul>
+    </nav>
+
+
+    <div>
+        <section>
+            <h2>Rezervasyon ve İletişim</h2>
+            <p>Aşağıdaki bilgilerden bize ulaşabilirsiniz:</p>
+            <ul>
+                <li>Adres: Kazımdirik, Demir Otel, Ankara Cd. Yanyol</li>
+                <li>Telefon: (555) 122 3344</li>
+                <li><a href="mailto:demirhotel@site.com">demirhotel@site.com</a></li>
+            </ul>
+            <!-- İletişim formu -->
+            <h2>İletişim Formu</h2>
+            <form action="/submit" method="post">
+                <label for="name">Adınız:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">E-posta:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Mesajınız:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+                <input type="submit" value="Gönder">
+                <input type="reset" value="Temizle">
+            </form>
+        </section>
+    </div>
+</body>   
+</html>

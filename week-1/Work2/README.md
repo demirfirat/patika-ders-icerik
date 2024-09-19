@@ -1,0 +1,1 @@
+Merhaba, bu dersimizde bir blog sitesi yaptık. İyi dersler..
