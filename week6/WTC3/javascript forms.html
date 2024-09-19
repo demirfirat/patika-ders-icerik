@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Forms</title>
+</head>
+<body>
+    <h1>Javascript Forms</h1>
+    <form id="signin">
+        <input type="text" name="username" placeholder="Kullanıcı adı">
+        <input type="password" name="password" placeholder="Parola" >
+        <button type="submit">Giriş Yap</button>
+    </form>
+    <script>
+        const form = document.getElementById('signin');
+
+        form.addEventListener('submit', function(event){
+            event.preventDefault();
+            console.log(event);
+
+            const usernameElem = form.querySelector('[name = "username"]');
+            const passwordElem = form.querySelector('[name = "password"]');
+            console.group('querySelector');
+            console.log('username', usernameElem.value);
+            console.log('password', passwordElem.value);
+            console.groupEnd();
+
+            const data = new FormData(event.currentTarget);
+            const username = data.get('username');
+            const password = data.get('password');
+
+            console.group('Formdata');
+            console.log('username', username);
+            console.log('password', password);
+            console.groupEnd();
+
+            if (username === '' || password === ''){
+                alert('kullanıcı adı ya da şifre boş olamaz.');
+            } else if (username.length < 3){
+                alert('kullanıcı adı 3 karakterden az olamaz.');
+            } else if (password.length < 5){
+                alert('parola 5 karakterden az olamaz.');
+            }
+        });
+    </script>
+</body>
+</html>
