@@ -58,6 +58,42 @@
             console.log(err);
         }
     }
+
+    // Birkaç adet örnek
+
+    // Syntax Error
+    // console.log(Hello World); // Burada tırnaklar eksik, SyntaxError oluşur
+
+    // Runtime Error
+    let numbers = [1, 2, 3];
+    // console.log(numbers[10]); // Burada numbers dizisinin sınırlarını aşıldığı için TypeError oluşur
+
+    // Logic Error
+    function calculateSum(a, b) {
+   // return a  b; // Burada toplama işlemi yerine çıkarma yapıldığı için beklenmeyen sonuç oluşabilir
+    }
+
+    // Try-Catch blokları
+    try {
+     // Potansiyel hata üretebilecek kodlar
+    let x = y + 1; // Burada y tanımlı değilse ReferenceError oluşur
+    } catch (error) {
+    // Hata durumunda yapılacak işlemler
+    //console.error('Error occurred:', error.message);
+    }
+
+    // Throwing Errors
+    function divide(a, b) {
+    if (b === 0) {
+    throw new Error('Division by zero is not allowed');
+     }
+    return a / b;
+    }
+    // Global Error Handling
+    window.onerror = function(message, source, lineno, colno, error) {
+     console.error('Global error occurred:', message, 'at', source, 'line', lineno);
+    };
+
     </script>
 </body>
 </html>
