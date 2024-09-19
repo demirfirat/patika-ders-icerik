@@ -1,7 +1,8 @@
 # Drum Kit
 
 A simple Drum Kit project built using HTML, CSS, and JavaScript. This project allows users to play different drum sounds by clicking on the buttons or pressing the corresponding keys on the keyboard.
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/b20bdc7b-6ada-47c4-b541-4099f720fc34)
+
 
 ## Demo
 
