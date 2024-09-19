@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Errors</title>
+</head>
+<body>
+    <h1>Javascript Errors</h1>
+    <button onclick="error()">Error</button>
+    <button onclick="syntaxError()">Syntax Error</button>
+    <button onclick="typeError()">Type Error</button>
+    <hr>
+    <p>Lütfen 1 ile 100 arasında bir sayı girin.</p>
+    <input type="text" id="input">
+    <button onclick="validate()">Validate</button>
+    <script>
+        function error(){
+            const message = new Error('Custom Error');
+            throw message;
+        }
+        function syntaxError(){
+            throw new SyntaxError('Custom SyntaxError');
+        }
+        function typeError(){
+            throw new TypeError('Custom TypeError');
+        }
+        try {
+            throw new Error('Custom Error');
+        } catch (err){
+            if (err instanceof Error){
+                console.log('instanced');
+            }
+            console.log(err);
+        }
+
+        function validate(value){
+            value = value.trim();
+            if (value === ''){
+                throw 'Boş alan';
+            } else if (isNaN(value)){
+                throw 'Değer bir sayı değil.';
+            }
+            value = Number(value);
+            if (value < 5){
+                throw "Sayı 5'ten küçük olamaz."
+            } else if (value > 100){
+                throw "Sayı 100'den büyük."
+            }
+
+            return true;
+        }
+       function test (){
+        try {
+            const value = document.getElementById('input').value;
+            validate(value);
+        } catch (err){
+            console.log(err);
+        }
+    }
+    </script>
+</body>
+</html>
