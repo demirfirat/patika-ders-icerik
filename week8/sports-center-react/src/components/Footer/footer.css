@@ -1,0 +1,36 @@
+#footer{
+    background-color: var(--main-background);
+    color: var(--text-color-white);
+}
+#footer .container{
+    max-width: 1100px;
+    padding-bottom: 50px;
+}
+.footer p{
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.links{
+    display: flex;
+    justify-content: space-around;
+}
+.information h3{
+    font-weight: 600;
+    font-size: 24px;
+}
+.information a,
+.helpful a{
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 10px;
+    color: var(--text-color-white);
+}
+.helpful h3{
+    font-weight: 600;
+    font-size: 24px;
+}
+.information a:hover,
+.helpful a:hover{
+    color: var(--hover-bg-color);
+}

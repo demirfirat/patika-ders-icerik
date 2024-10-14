@@ -1,0 +1,29 @@
+:root{
+  --text-color-white: #fefefe;
+  --text-color-black: #4e4e4e;
+  --main-background: #355592;
+  --background-color-2: #759feb;
+  --background-color-3: #f1f8ff;
+  --background-color-4: #8096be;
+  --background-color-5: #fff;
+  --hover-bg-color: #f39c12;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+  overflow-x: hidden;
+}
+.container.content{
+  width: 100%;
+  max-width: 980px;
+}
+/*font büyüklüğünü sınıf aracılığıyla sabitleyerek kullanıyoruz*/
+.lead{
+  font-weight: 600;
+}
+  

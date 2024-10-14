@@ -1,0 +1,181 @@
+#trainer{
+    background-color: var(--background-color-3);
+}
+#trainer .container{
+    max-width: 1100px;
+}
+#trainer .h2{
+    text-align: center;
+    font-weight: 800;
+    color: var(--main-background);
+    position: relative;
+    padding-bottom: 20px;
+    padding-top: 100px;
+}
+#trainer .h2::after{
+    content: "";
+    position: absolute;
+    left: 49%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 9px;
+    border-radius: 10px;
+    background-color: var(--hover-bg-color);
+}
+#trainer .class-2p{
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    margin: 40px 150px;
+    color: var(--text-color-black);
+}
+.trainer-cards{
+    gap: 5%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 32px;
+}
+.trainer-card{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+.trainer-card img{
+    width: 100%;
+    border: 2px solid var(--hover-bg-color);
+    border-radius: 5px;
+}
+.trainer-card::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 108%;
+    height: 40%;
+    background-color: var(--main-background);
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: all 0.5s;
+  }
+  .trainer-card::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40%;
+    height: 90%;
+    background-color: var(--main-background);
+    transform: translate(-50%, -40%);
+    z-index: -1;
+    transition: all 1s;
+  }
+.top-bar{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40%;
+    height: 90%;
+    background-color: var(--main-background);
+    transform: translate(-50%, -60%);
+    z-index: -1;
+    transition: all 0.5s;
+}
+.trainer-card:hover::before {
+    height: 60%;
+    transform: translate(-50%, -30%);
+}
+.trainer-card:hover::after {
+    width: 70%;
+    transform: translate(-50%, -40%);
+} 
+.trainer-info {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    background-color: var(--main-background);
+    color: white;
+    width: 90%;
+    height: 30%;
+    text-align: center;
+    padding: 10px;
+    z-index: 2;
+    clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+    transition: all 0.5s;
+}
+.trainer-info h2 {
+    margin-top: 15px;
+    font-size: 1.4rem;
+}
+.trainer-info p {
+    margin-top: 15px;
+    font-size: 1rem;
+}
+.trainer-card:hover .trainer-info {
+    display: block;
+}
+/*Tablet Responsive*/
+@media (max-width: 991.98px){
+    #trainer .h2{
+        padding-top: 80px;
+    }
+    #trainer .class-2p{
+        font-size: 14px;
+        font-weight: 600;
+        text-align: center;
+        margin: 40px 50px;
+    }
+    .trainer-cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0;
+    }
+    .trainer-card{
+        position: relative;
+        width: 70%;
+        height: 70%;
+        margin-top: 10px;
+        z-index: 0;
+    }
+    .trainer-info h2 {
+        margin-top: 20px;
+        font-size: 2rem;
+    }
+    .trainer-info p {
+        margin-top: 20px;
+        font-size: 1.7rem;
+    }
+}
+/*Mobile Responsive*/
+@media (max-width: 575.98px){
+    #trainer .h2{
+        padding-top: 80px;
+    }
+    #trainer .class-2p{
+        font-size: 16px;
+        font-weight: 600;
+        text-align: center;
+        margin: 30px 36px;
+    }
+    .trainer-card{
+        position: relative;
+        width: 80%;
+        height: 80%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        z-index: 0;
+    }
+    .trainer-info h2 {
+        margin-top: 0;
+        font-size: 1.5rem;
+    }
+    .trainer-info p {
+        margin-top: 5px;
+        font-size: 1.3rem;
+    }
+}
