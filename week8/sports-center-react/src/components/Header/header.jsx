@@ -7,7 +7,7 @@ const Header = () => {
   
     // Scroll kontrol fonksiyonu
     const checkScroll = () => {
-      const header = document.getElementById('header');
+      
       
       if (window.innerWidth > 280) {
         if (window.scrollY > 50) {
