@@ -1,4 +1,7 @@
 import "./trainer.css";
+import Trainer1 from "/photos/trainer1.jpg";
+import Trainer2 from "/photos/trainer2.jpg";
+import Trainer3 from "/photos/trainer3.jpg";
 
 const Trainer = () => {
 
@@ -10,7 +13,7 @@ const Trainer = () => {
             <div className="trainer-cards">
                 <div className="trainer-card">
                     <div className="top-bar"></div>
-                    <img src="photos/trainer1.jpg" alt="Trainer-1" />
+                    <img src={Trainer1} alt="Trainer-1" />
                     <div className="trainer-info">
                         <h2>Jane Doe</h2>
                         <p>Cardio Trainer</p>
@@ -18,7 +21,7 @@ const Trainer = () => {
                 </div>
                 <div className="trainer-card">
                     <div className="top-bar"></div>
-                    <img src="photos/trainer2.jpg" alt="Trainer-2" />
+                    <img src={Trainer2} alt="Trainer-2" />
                     <div className="trainer-info">
                         <h2>Nick Mitchell</h2>
                         <p>Personal Trainer</p>
@@ -26,7 +29,7 @@ const Trainer = () => {
                 </div>
                 <div className="trainer-card">
                     <div className="top-bar"></div>
-                    <img src="photos/trainer3.jpg" alt="Trainer-3" />
+                    <img src={Trainer3} alt="Trainer-3" />
                     <div className="trainer-info">
                         <h2>Kayla Itsines</h2>
                         <p>Stretching Trainer</p>

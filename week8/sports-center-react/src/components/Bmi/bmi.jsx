@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./bmi.css";
+import Bmiphoto from "/photos/bmi-index.jpg";
 
 const BmiCalculator = () => {
     const [height, setHeight] = useState('');
@@ -78,7 +79,7 @@ const BmiCalculator = () => {
         </div>
         <div className="bmi-index">
           <h3>Your BMI: {bmi}</h3>
-          <img src="photos/bmi-index.jpg" alt="BMI Index" className="bmi-img" />
+          <img src={Bmiphoto} alt="BMI Index" className="bmi-img" />
           {percentage !== null && (
             <div className="arrow-up" style={{ left: `${percentage}%` }}></div>
           )}

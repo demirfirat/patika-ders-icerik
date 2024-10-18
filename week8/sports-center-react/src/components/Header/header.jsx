@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import "./header.css";
+import Logo from "/photos/logo.png";
 
 const Header = () => {
     const [activeSection, setActiveSection] = useState('');
@@ -52,7 +53,7 @@ const Header = () => {
       <header id="header" className={`navbar fixed-top ${isScrolled ? 'scrolled' : ''}`}>
         <div className="container content">
           <div className="logo">
-            <img src="photos/logo.png" alt="Logo" />
+            <img src={Logo} alt="Logo" />
           </div>
           <nav id="navbar" className="navbar navbar-expand-lg">
             <button

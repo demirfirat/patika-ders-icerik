@@ -1,11 +1,12 @@
 import "./footer.css";
+import Logo from "/photos/logo.png";
 
 const Footer = () => {
 
     return (
         <footer id="footer">
         <div className="footer container content">
-            <img src="photos/logo.png" alt="Logo" />
+            <img src={Logo} alt="Logo" />
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit autem est repellendus quaerat, quae ab obcaecati numquam ipsa hic ad magnam officiis at rerum qui tempora expedita cum optio repellat, minima ratione nihil? Tempore, obcaecati!</p>
         </div>
         <div className="links container content">

@@ -1,5 +1,9 @@
 import { useState } from 'react';
 import './ourclasses.css';
+import Yogaphoto from "/photos/yoga.jpg";
+import Groupphoto from "/photos/group.webp";
+import Solophoto from "/photos/solo.jpg";
+import Stretchingphoto from "/photos/stret.webp";
 
 const OurClasses = () => {
     //aktif sınıfı yönetmek için state kullanıyoruz.
@@ -37,7 +41,7 @@ const OurClasses = () => {
                         <p>Monday-Tuesday: 10:00am — 12:00pm</p>
                         <p>Wednesday-Friday: 3:00pm — 6:00pm</p>
                     </div>
-                    <img src="photos/yoga.jpg" alt="Yoga" />
+                    <img src={Yogaphoto} alt="Yoga" />
                 </div>
                 <div className={`class-content group-content ${activeClass === 'group' ? 'active-content' : ''}`}>
                     <div className="classes-text">
@@ -50,7 +54,7 @@ const OurClasses = () => {
                         <p>Monday-Tuesday: 12:00pm — 3:00pm</p>
                         <p>Wednesday-Friday: 4:00pm — 7:00pm</p>
                     </div>
-                    <img src="photos/group.webp" alt="Group" />
+                    <img src={Groupphoto} alt="Group" />
                 </div>
 
                 <div className={`class-content solo-content ${activeClass === 'solo' ? 'active-content' : ''}`}>
@@ -64,7 +68,7 @@ const OurClasses = () => {
                         <p>Monday-Tuesday: 11:00am — 1:00pm</p>
                         <p>Wednesday-Friday: 2:00pm — 3:00pm</p>
                     </div>
-                    <img src="photos/solo.jpg" alt="Solo" />
+                    <img src={Solophoto} alt="Solo" />
                 </div>
 
                 <div className={`class-content stretching-content ${activeClass === 'stretching' ? 'active-content' : ''}`}>
@@ -78,7 +82,7 @@ const OurClasses = () => {
                         <p>Monday-Tuesday: 12:00pm — 14:00pm</p>
                         <p>Wednesday-Friday: 5:00pm — 8:00pm</p>
                     </div>
-                    <img src="photos/stret.webp" alt="Stretching" />
+                    <img src={Stretchingphoto} alt="Stretching" />
                 </div>
                 {/* CONTENT AREA END */}
             </div>

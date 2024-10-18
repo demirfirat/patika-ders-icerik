@@ -1,4 +1,6 @@
 import "./review.css";
+import Client1 from "/photos/client1.jpg";
+import Client2 from "/photos/client2.jpg";
 
 const Review = () => {
 
@@ -10,7 +12,7 @@ const Review = () => {
             <div className="review-container">
                 <div className="client">
                     <div className="client-info">
-                        <img src="photos/client1.jpg" alt="Client-1" />
+                        <img src={Client1} alt="Client-1" />
                         <div className="c-name">
                         <p>Diet Expert</p>
                         <p>CFO</p>
@@ -22,7 +24,7 @@ const Review = () => {
                 </div>
                 <div className="client">
                     <div className="client-info">
-                        <img src="photos/client2.jpg" alt="Client-2" />
+                        <img src={Client2} alt="Client-2" />
                         <div className="c-name">
                         <p>Cardio Trainer</p>
                         <p>CEO</p>
