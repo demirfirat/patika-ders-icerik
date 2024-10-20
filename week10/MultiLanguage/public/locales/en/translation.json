@@ -1,0 +1,11 @@
+{
+    "selam":"say hello",
+    "welcome": "Welcome {{user.name}} {{user.surname}} !",
+    "Title": "Title",
+    "btn": "Count is",
+    "languages":{
+        "tr": "Turkish",
+        "en": "English",
+        "ar": "Arabic"
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "selam":"selamla",
+    "welcome": "Sayın {{user.name}} {{user.surname}} hoş geldiniz !",
+    "Title":"Baslık",
+    "btn": "Sayı",
+    "languages":{
+        "tr": "Türkçe",
+        "en": "İngilizce",
+        "ar": "Arapça"
+    }
+}
