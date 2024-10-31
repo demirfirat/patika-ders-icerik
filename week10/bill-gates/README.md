@@ -1,8 +1,16 @@
-# React + Vite
+# Spend Bill Gates' Money Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project was developed to clone the game [neal.fun/spend](https://neal.fun/spend/). The aim of the game is to reduce the balance on the screen by spending money and increase the balance by making purchases.
 
-Currently, two official plugins are available:
+## Technologies used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React**: The project uses the React library to build the user interface.
+- **JavaScript**: Game logic and interactions are written in JavaScript.
+
+## Features
+
+- Initially, the game starts with a certain balance.
+- The user can reduce the balance amount by spending money.
+- After spending money, the balance on the screen is automatically updated.
+- The user can increase the balance by making purchases.
+- The user experience is enhanced with a header that remains constant depending on the scroll movements.
