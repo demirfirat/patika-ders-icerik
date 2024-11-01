@@ -1,0 +1,40 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 250px;
+    text-align: center;
+    background-color: #fff;
+    padding: 30px 20px;
+    margin: 10px auto;
+}
+.head{
+    margin-bottom: 10px;
+}
+.head-img{
+max-width: 125px;
+height: 125px;
+border-radius: 50%;
+object-fit: cover;
+padding: 10px;
+margin: 10px auto 25px;
+}
+.head-title{
+    font-size: 2em;
+    margin: 0;
+}
+.money-container{
+    background-color: #25c585;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    width: 70%;
+    text-align: center;
+    padding: 20px 20px;
+    margin: 10px auto;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
