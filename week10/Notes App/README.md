@@ -1,10 +1,11 @@
 # Note App
-![image](https://github.com/user-attachments/assets/c65e5668-78fd-4f91-9e4e-6fc5c59088dd)
+![image](https://github.com/user-attachments/assets/69663bc7-8ff7-446f-ae5a-7a172834838d)
+
 ## Project Overview 
 React-redux based interactive note application connected to a browser. In this project, there is a responsive design where users can make colour choices and after writing their notes, the added note is shaped according to the content size.
 
 ## View Demo 
-[Live Demo](https://patika-ders-icerik.vercel.app/)
+[Live Demo](https://patika-ders-icerik-wjkn.vercel.app/)
 
 ## Features
 - **Note Search Bar**: Case sensitive search bar.
