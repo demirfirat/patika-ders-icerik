@@ -1,5 +1,5 @@
 # Bill Gates Spend Money
-
+![image](https://github.com/user-attachments/assets/c65e5668-78fd-4f91-9e4e-6fc5c59088dd)
 ## Project Overview 
 website where users will spend bil gates's fortune and has an interactive responsive design.
  It was written with React.js and the information in a data file was accessed and integrated into the site by establishing communication between components.
