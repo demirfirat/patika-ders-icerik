@@ -6,7 +6,7 @@
 A to-do list made by considering the React context structure. In this application, it is aimed that users will deal with an understandable structure by pouring what they will do into a list and using the read, delete, write options.
 
 ## View Demo 
-[Live Demo](https://patika-ders-icerik-wjkn.vercel.app/)
+[Live Demo](https://todoapp-brown-theta.vercel.app/)
 
 ## Features
 - **To-do add bar**: To add an item to the list, just type and press enter.
