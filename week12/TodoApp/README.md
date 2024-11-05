@@ -1,5 +1,6 @@
 # Todo App
-![image](https://github.com/user-attachments/assets/69663bc7-8ff7-446f-ae5a-7a172834838d)
+![image](https://github.com/user-attachments/assets/01eadf40-6d58-4398-be66-94c00496f9aa)
+
 
 ## Project Overview 
 A to-do list made by considering the React context structure. In this application, it is aimed that users will deal with an understandable structure by pouring what they will do into a list and using the read, delete, write options.
