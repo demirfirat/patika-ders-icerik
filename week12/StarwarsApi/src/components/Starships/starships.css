@@ -1,0 +1,56 @@
+.ship{
+    padding: 0 0 50px 0;
+    border-radius: 3rem;
+    background-color: lightblue;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    background-color: #111423;
+    color: #95a3d2;
+}
+
+.ship-imgs img {
+    width: 100%;
+    height: 150px;
+    border-radius: 2rem;
+}
+
+.info-row {
+    display: flex;
+}
+
+.info-row .title {
+    font-weight: bold;
+}
+.ship-info h2{
+    font-size: 14px;
+    text-align: center;
+    margin: 20px auto;
+}
+.info-row{
+    font-size: 12px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    gap: 5px;
+}
+.show-more{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.show-more button{
+    border-radius: 1rem;
+    width: 10%;
+    height: 2rem;
+    background-color:  #351111;
+    color: white;
+    padding: 0 1rem;
+    border: none;
+    cursor: pointer;
+}
+.show-more button:hover{
+    scale: 1.1;
+    transition: ease-in-out 0.2s;
+}

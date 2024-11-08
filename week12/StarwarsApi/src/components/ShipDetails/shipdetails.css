@@ -1,0 +1,87 @@
+.single-ship{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ship-shadow{
+    border-radius: 2rem;
+    border: 5px solid #ffffff;
+    background-color: black;
+    margin-bottom: 10px;
+}
+.ship-detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 2rem;
+    background-color: #ffffff;
+    margin: 5px;
+}
+
+.ship-name {
+    border-bottom: 2px solid #39322c;
+    margin-bottom: 2rem;
+}
+
+.ship-name p  {
+    color: #babcd4;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.ship-img img {
+    width: 400px;
+    height: 200px;
+    border-radius: 2rem;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    margin-bottom: 10px;
+}
+.ship-details{
+    justify-content: center;
+    align-items: center;
+    padding: 0 auto;
+    text-align: center;
+}
+.ship-detail-info {
+    margin-bottom: 0.6rem;
+    color: #babcd4;
+    padding: 0 20px;
+    text-align: left;
+    margin: 10px auto;
+}
+
+.ship-detail-info .title {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.ship-detail-info .value {
+    font-size: 1rem;
+    font-weight: 500;
+}
+.loading{
+    font-size: 36px;
+    font-weight: 800;
+    color: antiquewhite;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.ship-details button{
+    border-radius: 1rem;
+    width: 22%;
+    height: 2rem;
+    background-color:  #351111;
+    color: white;
+    padding: 0 1rem;
+    border: none;
+    cursor: pointer;
+}
+.ship-details button:hover{
+    scale: 1.1;
+    transition: ease-in-out 0.2s;
+}

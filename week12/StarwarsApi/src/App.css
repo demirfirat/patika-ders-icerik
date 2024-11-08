@@ -1,0 +1,51 @@
+body {
+  background: linear-gradient(135deg, #3d2b2d, #3c3c8c);
+  margin: 0;
+  padding: 0;
+  font-family: arial;
+  min-height: 100vh ;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+.logo img {
+  width: 200px;
+  height: auto;
+}
+.search-area{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #a2a0c4;
+  gap: 1rem;
+}
+
+.search-area input{
+  border-radius: 1rem;
+  width: 15%;
+  height: 2rem;
+  background-color:  #351111;
+  color: white;
+  padding: 0 1rem;
+  font-size: large;
+}
+
+.ships{
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+hr{
+  width: 27%;
+  margin-top: 0;
+  margin-bottom: 60px;
+  background-color: #39322c;
+  opacity: 0.4;
+}
