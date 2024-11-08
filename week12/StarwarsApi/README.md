@@ -1,5 +1,6 @@
 # Star Wars API
-![image](https://github.com/user-attachments/assets/01eadf40-6d58-4398-be66-94c00496f9aa)
+![image](https://github.com/user-attachments/assets/78a64c62-a099-4634-8539-5895da1cf3b8)
+
 
 
 ## Project Overview 
