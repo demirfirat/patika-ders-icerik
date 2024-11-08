@@ -6,7 +6,7 @@
 Listing starships by taking data from https://swapi.dev/, the Star Wars API. We made progress by increasing the requests for all starships on the API with the more button. A dynamic site and environment was prepared for users to easily navigate between starships.
 
 ## View Demo 
-[Live Demo](https://patika-ders-icerik-wjkn.vercel.app/)
+[Live Demo](https://star-wars-ships-blond.vercel.app/)
 
 ## Features
 - **Search Bar**: Find starships listed on the screen with the search bar.
