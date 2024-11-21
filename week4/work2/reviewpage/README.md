@@ -1,27 +1,27 @@
-# Tailwind CSS ile Oluşturulmuş Web Sayfası
+# Web Page Created with Tailwind CSS
 ![Ekran görüntüsü 2024-09-06 223833](https://github.com/user-attachments/assets/e74510e1-a7ee-4a17-bd6a-8fdadc2e5aa8)
 
 
-Bu proje, **Tailwind CSS** framework'ü kullanılarak oluşturulmuş bir basit web sayfasıdır. Proje, modern ve esnek bir şekilde özelleştirilebilir bir arayüz sunar.
+This project is a simple web page built using the **Tailwind CSS** framework. The project offers a modern and flexibly customisable interface.
 
-## Proje İçeriği
+## Project Content
 
-- `index.html`: Ana web sayfası dosyası.
-- **Tailwind CSS**: Sayfa stillendirmesinde kullanılan CSS framework'ü.
+- `index.html`: Main web page file.
+- **Tailwind CSS**: CSS framework used in page styling.
 
-## Kullanılan Teknolojiler
+## Technologies Used
 
-- **HTML5**: Yapı ve içerik yönetimi.
-- **Tailwind CSS**: Modern ve ölçeklenebilir CSS framework'ü.
+- **HTML5**: Structure and content management.
+- **Tailwind CSS**: Modern and scalable CSS framework.
 
-## Katkıda Bulunanlar
+## Contributors
 
-- [Fırat Demir](https://github.com/demirfirat)
+- [Firat Demir](https://github.com/demirfirat)
 
-## Tailwind CSS Nedir?
+## What is Tailwind CSS?
 
-[Tailwind CSS](https://tailwindcss.com/) utility-first (yardımcı sınıflar üzerine kurulu) bir CSS framework'üdür. Bu yapı, önceden tanımlanmış sınıflar sayesinde sayfa düzenlerini hızla ve esnek bir şekilde oluşturmanıza olanak tanır.
+[Tailwind CSS](https://tailwindcss.com/) is a utility-first (based on utility classes) CSS framework. This structure allows you to create page layouts quickly and flexibly thanks to predefined classes.
 
-## Katkıda Bulunma
+## Contributing
 
-Katkıda bulunmak için lütfen bir issue açın veya bir pull request gönderin, Her türlü katkıya açığım.
+To contribute please open an issue or send a pull request, I am open to any contribution.
