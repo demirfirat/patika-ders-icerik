@@ -1,169 +1,169 @@
-# Metin Boyutlandırma ve Hizalama
-## Metin Boyutlandırma ve Hizalama
-### 1. Metin Boyutlandırma:
-   > Metin boyutlandırmak, metinlerin web sayfalarında uygun büyüklükte görüntülenmesini sağlar. Metin boyutunu ayarlamak için font-size özelliğini kullanırız.
-### A. Piksel (px) Birimiyle Boyutlandırma:
+# Text Sizing and Alignment
+## Text Sizing and Alignment
+### 1. Text Sizing:
+   > Text Sizing, ensures that text is displayed at the appropriate size on web pages. We use the font-size property to set the text size.
+### A. Pixel (px) Sizing by Unit:
 ```
 p {
      font-size: 12px;
-    /* Metin boyutunu 12 piksel olarak ayarlama */
+    /* Set text size to 12 pixels */
 }
 ```
-> Başka bir örnek:
+> Another one example:
 ```
-/* Metin boyutunu büyütme ve harf başlangıçlarını büyük yapma */
+/* Increase text size and capitalise letter starts */
 h1 {
      font-size: 36px;
-    /* Metin boyutu 36 piksel */
+    /* Text size 36px */
      text-transform: capitalize;
-    /* Metinlerin baş harflerini büyük yapma */
+    /* Capitalising the initials of texts */
 }
 ```
-### B. İm (em) Birimiyle Boyutlandırma:
-> em birimi, metnin bulunduğu elementin font büyüklüğüne göre boyutlandırma yapar.
+### B. Em (em) Sizing by Unit:
+> em unit sizes according to the font size of the element containing the text.
 ```
  body {
      font-size: 16px;
-    /* Varsayılan font boyutunu belirleme */
+    /* Set the default font size */
 }
  p {
      font-size: 1.2em;
-    /* Metin boyutunu 1.2 em olarak ayarlama (1.2 * 16px = 19.2px) */
+    /* Setting the text size to 1.2 em (1.2 * 16px = 19.2px) */
 }
 ```
-> Başka bir örnek:
+> Another one example:
 ```
-/* Metin boyutunu ayarlama ve düz metin (normal) olarak belirleme */
+/* Adjust the text size and set it as plain text (normal) */
 p {
      font-size: 20px;
-    /* Metin boyutu 20 piksel */
+    /* Text size 20px */
      font-style: normal;
-    /* Yazı tipini düz metin yapma */
+    /* Change the font to plain text */
 }
 ```
-### C. Yüzde (%) Birimiyle Boyutlandırma:
-> em birimi gibi, em birimi yerine yüzde birimi de metni etkili bir şekilde boyutlandırabilir.
+### C. Sizing in Percent (%) Units:
+> Like em units, percentage units instead of em units can effectively size text.
 ```
 h1 {
      font-size: 150%;
-    /* Metin boyutunu yüzde olarak artırma */
+    /* Increase text size by a percentage */
 }
 ```
-### 2. Metin Hizalama:
+### 2. Text Alignment:
 
-> Metin hizalamak, metinleri yatayda hizalamanın yanı sıra blok düzeyinde hizalamanın nasıl yapılacağını da içerir. Metin hizalamak için text-align ve display özelliklerini kullanırız.
-###  A. Yatay Metin Hizalaması:
+> Aligning text includes how to align text horizontally as well as how to align at the block level. We use the text-align and display properties to align text.
+###  A. Horizontal Text Alignment:
 ```
  p {
      text-align: center;
-    /* Metni merkezde yatay hizalama */
+    /* Horizontal align text in the centre */
 }
  h1 {
      text-align: right;
-    /* Metni sağda yatay hizalama */
+    /* Horizontal align text to the right */
 }
  h2 {
      text-align: justify;
-    /* Metni her iki kenara yaslamak (her satırı sola ve sağa yaslar) */
+    /* Justify text to both edges (justifies each line left and right) */
 }
 ```
-> Başka bir örnek:
+> Another One Example:
 ```
-/* Metni ortada hizalama ve kenarlık eklemek */
+/* Align text in the centre and add a border */
 .centered-text {
      text-align: center;
-    /* Metni merkezde yatay hizalama */
+    /* Horizontal align text in the centre */
      border: 2px solid #FF5733;
-    /* 2 piksel kalınlığında turuncu kenarlık */
+    /* 2 px thick orange border */
      padding: 10px;
-    /* Kenarlığın içeriye doğru boşluk bırakması */
+    /* Border leaving a gap inwards */
 }
 ```
-###   B. Blok Düzeyinde Metin Hizalaması:
-> display özelliğini kullanarak blok düzeyinde metin hizalayabiliriz.
+###   B. Text Alignment at Block Level:
+> We can align text at the block level using the display property.
 ```
 div {
      display: block;
-    /* Metni blok element olarak hizalama */
+    /* Align text as block element */
 }
  span {
      display: inline;
-    /* Metni satır içi element olarak hizalama */
+    /* Align text as inline element */
 }
 ```
-> Başka bir örnek:
+> Another one example:
 ```
-/* Metni ortada hizalama ve kenarlıkla arka plana görüntü ekleme */
+/* Align text in the centre and add an image to the background with a border */
 .centered-image-text {
      text-align: center;
      border: 1px solid #007BFF;
-    /* 1 piksel kalınlığında mavi kenarlık */
+    /* 1 pixel thick blue border */
      background-image: url("background-image.jpg");
-    /* Arka plana görüntü ekleme */
+    /* Add an image to the background */
      background-size: cover;
      padding: 20px;
-    /* Kenarlığın içeriye doğru boşluk bırakması */
+    /* Border leaving a gap inwards */
      color: #FFFFFF;
-    /* Metin rengini beyaz yapma */
+    /* Change text color to white */
 }
 ```
-### 3. Metinlerin Ortalanması:
-> Metinleri dikeyde ve yatayda ortalamak için vertical-align ve text-align özelliklerini kullanabiliriz.
+### 3. Centring Texts:
+> We can use the vertical-align and text-align properties to centre text vertically and horizontally.
 ```
-/* Metni yatayda merkezde hizalama */
+/* Align text in the centre horizontally */
  h1 {
      text-align: center;
 }
-/* Metni dikeyde merkezde hizalama */
+/* Align text vertically in the centre */
  .vertical-center {
      display: flex;
      align-items: center;
      justify-content: center;
      height: 300px;
-    /* Yükseklik değerini belirtmek önemlidir */
+    /* It is important to indicate the height value */
 }
 ```
-> Başka bir örnek:
+> Another One Example:
 ```
-/* Çok satırlı metni ortada hizalama ve satır yüksekliğini ayarlama */
+/* Centre align multi-line text and adjust line height */
 .multiline-center {
      text-align: center;
      line-height: 1.6;
-    /* Satır yüksekliğini belirleme */
+    /* Determine line height */
 }
 ```
-> Başka bir örnek:
+> Another One Example:
 ```
-/* Çok satırlı metni dikeyde ve yatayda ortala */
+/* Centre multi-line text vertically and horizontally */
 .multiline-vertical-horizontal-center {
      display: flex;
      align-items: center;
-    /* Dikeyde ortala */
+    /* Vertical centred */
      justify-content: center;
-    /* Yatayda ortala */
+    /* Horizontally centred */
      height: 300px;
-    /* Yükseklik değerini belirtmek önemlidir */
+    /* It is important to indicate the height value */
 }
 ```
-### 4. Çok Satırlı Metin Hizalaması:
-> Çok satırlı metinleri hizalamak için text-align ve line-height özelliklerini kullanabiliriz.
+### 4. Multi-line Text Alignment:
+> We can use the text-align and line-height properties to align multi-line texts.
 ```
-/* Çok satırlı metni merkezde hizalama */
+/* Centre align multi-line text */
  .multiline-center {
      text-align: center;
      line-height: 1.6;
-    /* Satır yüksekliğini belirlemek önemlidir */
+    /* It is important to determine the row height */
 }
 ```
-### Metin Kaydırma ve İçerik Gizleme
+### Text Wrapping and Content Hiding
 ```
-/* Metni kaydırma ve içeriğin görünmesini engelleme */
+/* Scroll text and block content from appearing */
 .scroll-hide-content {
      overflow: hidden;
-    /* İçeriğin görünmesini engelleme */
+    /* Blocking content from appearing */
      white-space: nowrap;
-    /* Metinlerin satır sonunda kesilmesini önleme */
+    /* Prevent text from being cut off at the end of a line */
      text-overflow: ellipsis;
-    /* Metni ... ile gösterme (eğer içeriğin tamamı görüntülenmiyorsa) */
+    /* Display text with ... (if not all content is displayed) */
 }
 ```
