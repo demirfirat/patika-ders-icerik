@@ -1,17 +1,17 @@
-# Basit Blog Sitesi
+# Simple Blog Site
 
-Bu proje, Bootstrap ve HTML/CSS kullanılarak oluşturulmuş basit bir blog sitesidir. Proje, temel web geliştirme becerilerini sergilemek ve bir blog sitesi oluşturmanın nasıl yapılacağını göstermek amacıyla hazırlanmıştır.
+This project is a simple blog site created using Bootstrap and HTML/CSS. The project is designed to demonstrate basic web development skills and show how to create a blog site.
 
-## Özellikler
-- Duyarlı (responsive) tasarım
-- Ana sayfada blog yazıları listesi
-- Her blog yazısı için ayrı bir detay sayfası
-- Sabit üst menü ve alt bilgi
-- Temel stil ve düzen Bootstrap ile sağlanmıştır
+## Features
+- Responsive design
+- List of blog posts on the home page
+- A separate detail page for each blog post
+- Fixed top menu and footer
+- Basic styling and layout provided by Bootstrap
 
-## Gereksinimler
-Bu proje herhangi bir ek yazılım gerektirmez, sadece bir web tarayıcısında çalıştırılabilir.
+## Requirements
+This project does not require any additional software, it can only be run in a web browser.
 
-## Kurulum
+## Installation
 
-1.[bu site](https://htmlpreview.github.io/?https://github.com/demirfirat/patika-ders-icerik/blob/main/week3/bootstrap%20work1/blogsite.html) üzerinden github linki aracılığıyla inceleyebilirsiniz.
+1.[this site](https://htmlpreview.github.io/?https://github.com/demirfirat/patika-ders-icerik/blob/main/week3/bootstrap%20work1/blogsite.html) through the github link.
