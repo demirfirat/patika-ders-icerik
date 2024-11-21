@@ -1,23 +1,23 @@
-# Saat ve Karşılama Ekranı
+# Clock and Welcome Screen
 ![image](https://github.com/user-attachments/assets/d42053ac-668e-4686-b613-2b872ae6b011)
 
 
-* Bu proje, HTML, CSS, Bootstrap ve JavaScript kullanarak oluşturulmuş basit bir saat ve karşılama ekranı içerir. Kullanıcıya güncel saati gösterir ve "Hoş geldiniz" mesajı verir.
+* This project contains a simple clock and welcome screen built using HTML, CSS, Bootstrap and JavaScript. Shows the user the current time and gives a ‘Welcome’ message.
 
-## Özellikler
+## Features
 
-- Dinamik saat göstergesi (JavaScript kullanılarak her saniye güncellenir).
-- Bootstrap ile responsive ve modern bir tasarım.
-- Basit ve kullanıcı dostu bir arayüz.
-- Hoş geldiniz mesajı.
+- Dynamic clock display (updated every second using JavaScript).
+- Responsive and modern design with Bootstrap.
+- Simple and user-friendly interface.
+- Welcome message.
 
-## Kullanılan Teknolojiler
+## Technologies Used
 
-- HTML5: Sayfa yapısını oluşturmak için kullanıldı.
-- CSS3: Sayfanın stilini belirlemek için kullanıldı.
-- Bootstrap: Responsive ve grid yapısını sağlamak için kullanıldı.
-- JavaScript: Saati dinamik olarak göstermek için kullanıldı.
+- HTML5: Used to create the page structure.
+- CSS3: Used to determine the style of the page.
+- Bootstrap: Used to provide responsive and grid structure.
+- JavaScript: Used to show the time dynamically.
 
-## İçeriği Deneme
-GitHub & BitBucket HTML Preview kullanarak projeyi görüntüleyebilirsiniz
-[LİNK.](https://htmlpreview.github.io/?https://github.com/demirfirat/patika-ders-icerik/blob/main/week5/javascriptclock/index.html)
+## Content Experiment
+You can view the project using GitHub & BitBucket HTML Preview
+[LINK.](https://htmlpreview.github.io/?https://github.com/demirfirat/patika-ders-icerik/blob/main/week5/javascriptclock/index.html)
