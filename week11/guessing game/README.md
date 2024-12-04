@@ -1,5 +1,6 @@
 # Guessing Game Project 🎮
 This project is a simple and fun guessing game where users try to answer the given questions. For each question, the user builds the correct answer by selecting the appropriate letters. Feedback is provided for both correct and incorrect answers.
+![image](https://github.com/user-attachments/assets/79f4783e-d49b-4cdb-a1cd-fcd44e9dbb25)
 
 ## Features 
 - Dynamic questions and answers are loaded from the data.js file.
