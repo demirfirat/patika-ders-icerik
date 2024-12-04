@@ -1,0 +1,23 @@
+export const data =[
+    {id: 1, question: 'Bir hayvan adı 😺 ?', answer: 'Kedi'},
+    {id: 2, question: 'Bir köpek cinsi 🐕 ?', answer: 'Pitbull'},
+    {id: 3, question: 'Bir şehir adı 🏙️ ?', answer: 'Ankara'},
+    {id: 4, question: 'Bir Balık adı 🐟 ?', answer: 'Japon'},
+    {id: 5, question: 'Bir meyve adı 🍎 ?', answer: 'Elma'},
+    {id: 6, question: 'Bir renk adı 🎨 ?', answer: 'Mavi'},
+    {id: 7, question: 'Bir ülke adı 🌍 ?', answer: 'Türkiye'},
+    {id: 8, question: 'Bir çiçek adı 🌹 ?', answer: 'Gül'},
+    {id: 9, question: 'Bir içecek adı 🥤 ?', answer: 'Kola'},
+    {id: 10, question: 'Bir spor türü ⚽ ?', answer: 'Futbol'},
+    {id: 11, question: 'Bir araç türü 🚗 ?', answer: 'Otomobil'},
+    {id: 12, question: 'Bir gezegen adı 🪐 ?', answer: 'Mars'},
+    {id: 13, question: 'Bir meslek adı 👨‍⚕️ ?', answer: 'Doktor'},
+    {id: 14, question: 'Bir müzik türü 🎵 ?', answer: 'Rock'},
+    {id: 15, question: 'Bir tatlı türü 🍰 ?', answer: 'Pasta'},
+    {id: 16, question: 'Bir sebze adı 🥦 ?', answer: 'Brokoli'},
+    {id: 17, question: 'Bir tarihi yer adı 🏛️ ?', answer: 'Ayasofya'},
+    {id: 18, question: 'Bir teknoloji şirketi adı 💻 ?', answer: 'Apple'},
+    {id: 19, question: 'Bir dil adı 🗣️ ?', answer: 'İngilizce'},
+    {id: 20, question: 'Bir deniz adı 🌊 ?', answer: 'Akdeniz'},
+    {id: 21, question: 'Bir oyun adı 🎮 ?', answer: 'Satranç'}
+]
