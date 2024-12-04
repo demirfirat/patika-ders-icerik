@@ -1,8 +1,6 @@
 # Star Wars API
 ![image](https://github.com/user-attachments/assets/78a64c62-a099-4634-8539-5895da1cf3b8)
 
-
-
 ## Project Overview 
 Listing starships by taking data from https://swapi.dev/, the Star Wars API. We made progress by increasing the requests for all starships on the API with the more button. A dynamic site and environment was prepared for users to easily navigate between starships.
 
