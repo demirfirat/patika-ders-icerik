@@ -6,10 +6,10 @@ function sleep (ms = 500){
 }
 
 const boardItem = [
- {id : 1, name: "green"}, 
- {id : 2, name: "blue"}, 
- {id : 3, name: "yellow"}, 
- {id : 4, name: "red"}, 
+ {id : 1, name: "green", sound:"/sounds/green.mp3"}, 
+ {id : 2, name: "blue", sound:"/sounds/blue.mp3"}, 
+ {id : 3, name: "yellow", sound:"/sounds/yellow.mp3"}, 
+ {id : 4, name: "red", sound:"/sounds/green.mp3"}, 
 ];
 function App() {
   const [score, setScore] = useState(0);
@@ -18,6 +18,16 @@ function App() {
   const [userArray, setUserArray] = useState([]);
   const [turn, setTurn] = useState(true);
 
+  const playSound = (idOrPath) => {
+    let sound;
+    if (typeof idOrPath === "string") {
+      sound = idOrPath;
+    }else { sound = boardItem.find(item => item.id === idOrPath)?.sound;}
+    if (sound){
+      const audio = new Audio(sound);
+      audio.play();
+    }
+  }
   const handleStart = () => {
     setIsPlaying(true);
     setComputerArray([]);
@@ -37,6 +47,7 @@ function App() {
       for (let i = 0; i < computerArray.length; i++){
         const pad = document.getElementById(computerArray[i]);
         pad?.classList.add("active");
+        playSound(computerArray[i]);
         await sleep();
         pad?.classList.remove("active");
         await sleep();
@@ -59,6 +70,7 @@ function App() {
         }, 1000);
         setTurn(!turn);
       } else{
+        playSound("/sounds/game-over.mp3")
         setIsPlaying(false);
       }
     }
@@ -69,6 +81,7 @@ function App() {
     setUserArray((prev) => [...prev, id]);
     const pad = document.getElementById(id);
     pad.classList.add("active");
+    playSound(id);
     await sleep();
     pad.classList.remove("active");
   }
