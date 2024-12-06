@@ -1,8 +1,19 @@
-# React + Vite
+# Simon Says Game
+A Simon Game implementation built with React. This memory-based game challenges players to repeat the sequence of colors shown by the computer. Each correct round increases your score, but one mistake ends the game.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Features
+- Follows the classic Simon Says gameplay.
+- Score tracking.
+- Alternating turns between the user and the computer.
+- Sound effects matched to colors.
 
-Currently, two official plugins are available:
+## How to Play?
+- Click the Start Game button to begin.
+- The computer will display a sequence of colors and play a sound for each one.
+- Repeat the sequence by clicking the colors in the correct order.
+- Each correct round adds to your score, and the sequence gets longer.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
+- **React:** For building the user interface.
+- **Vite:** For project setup and development.
+- **CSS:** For design and animations.
